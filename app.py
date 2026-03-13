@@ -7,8 +7,7 @@ import io
 app = FastAPI()
 
 # Load model
-model = tf.keras.models.load_model(r"D:\WEBSITE\BioLungNet_Model.h5")
-
+model = tf.keras.models.load_model("BioLungNet_Model.h5")
 classes = ["Benign", "Malignant", "Normal"]
 
 def preprocess(img):
